@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<title>KAY/O Master Page</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../jquery.connections.js"></script>
+</head>
+<body style="background-color:#0E1921;">
+    <div class="mapholder">
+        <!--Init Maps-->
+	    <img class="map" src="../images/ascent.png">
+        <img class="map" src="../images/ascentlabels.png">
+        <div class="iconcontainer">
+            <a href="../index.html"><img class="icon" id="map" src="../images/home.png"></a>
+        </div>
+        <!--Init Player Positions-->
+        <div class="iconcontainer" id="ap1"></div>
+        <!--Init Lineups-->
+        <div class="iconcontainer">
+            <a href="../maps/ascentNades/a1.html"><img class="icon" id="a1" src="../images/zero.webp"></a>
+        </div>
+        <!--Init Connectors-->
+        <script>
+            jQuery(document).ready(function() {
+            jQuery('#a1').connections({ to: '#ap1' });
+            });
+    </script>
+    </div>
+</body>
