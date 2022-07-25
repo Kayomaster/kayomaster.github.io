@@ -66,6 +66,21 @@ height: 100vh;
   color: white;
   border: 1px dashed;
 }
+#aim, #zoom, #pos {
+  width: 512px;
+  height: 288px;
+}
+#result {
+  width: 614px;
+  height: 345px;
+}
+#lineup {
+  display: grid;
+  grid-template-columns: repeat(2, 70vh);
+  grid-template-rows: repeat(2, 20vw);
+  grid-gap: 15px;
+
+}
 /* ID's for specific positions */
 #ap1 {
   margin-left: -10vw;
